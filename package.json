@@ -1,0 +1,45 @@
+{
+  "name": "linkedlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "transform": {
+      ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(spec))\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanosipov95/linkedlist.git"
+  },
+  "author": "Ivan Osipov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanosipov95/linkedlist/issues"
+  },
+  "homepage": "https://github.com/ivanosipov95/linkedlist#readme",
+  "devDependencies": {
+    "@types/jest": "23.3.10",
+    "jest": "23.6.0",
+    "nodemon": "1.18.9",
+    "ts-jest": "23.10.5",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
+  }
+}
